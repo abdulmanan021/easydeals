@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="shortcut icon" href="assets/images/svg/favicon.svg" type="image/x-icon">
+
+    <title>Easy Deals</title>
+
+</head>
+
+<body>
+    <div class="container border-1 no_dsp_mob">
+        <div class="d-flex justify-content-between">
+            <ul class="nav nav-inline">
+                <li class="nav-item d-flex align-items-center top_navv">
+                    <a class="nav-link text_blue ps-0" href="#">
+                        Welcome to Easy Deals
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav nav-inline">
+                <li class="nav-item d-flex align-items-center top_navv">
+                    <i class="fas fa-map-marker-alt text_blue"></i>
+                    <a class="nav-link text_blue ps-2" href="#">Store Locator</a>
+                </li>
+                <li class="nav-item d-flex align-items-center top_navv">
+                    <i class="fas fa-truck text_blue"></i>
+                    <a class="nav-link text_blue ps-2" href="#">Order Tracking</a>
+                </li>
+                <li class="nav-item d-flex align-items-center top_navv">
+                    <i class="fas fa-shopping-bag text_blue"></i>
+                    <a class="nav-link text_blue ps-2" href="#">Shop</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid light_blue_bg px-0">
+        <header class="sticky_header">
+            <nav class="navbar navbar-light">
+                <div class="container">
+                    <a class="navbar-brand fs-2 fw-bold" href="index.html">
+                        <img src="assets/images/svg/easy_deal_logo.svg" class="d-block my-auto" alt="">
+                    </a>
+                    <button class="navbar-toggler border-0 navbar-dark ms-5" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="fas fa-bars text_yellow"></i>
+                    </button>
+                    <div class="w-50 no_dsp_mob">
+                        <ul class="navbar-nav d-flex flex-row justify-content-center flex-grow-1">
+                            <li class="nav-item w-75">
+                                <div class="d-flex rounded-pill light_blue_bg border-0 overflow-hidden w-100">
+                                    <input class="form-control light_blue_bg rounded-0 border-0" type="search"
+                                        placeholder="Search">
+                                    <button class="btn yellow_bg border-0 rounded-0" type="button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline-dark border-0 rounded-3 no_dsp_tab ms-auto me-1" type="button">
+                        <i class="fab fa-facebook icon_size text_yellow"></i>
+                    </button>
+                    <button class="btn btn-outline-dark border-0 rounded-3 no_dsp_tab me-1" type="button">
+                        <i class="fab fa-whatsapp icon_size text_yellow"></i>
+                    </button>
+                    <button class="btn btn-outline-dark border-0 rounded-3 no_dsp_tab me-1" type="button">
+                        <i class="fab fa-instagram icon_size text_yellow"></i>
+                    </button>
+                    <div class="offcanvas sticky_header offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header blue_bg">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                            <button type="button" class="btn-close text-reset text-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body blue_bg">
+                            <ul class="navbar-nav d-flex flex-row justify-content-center flex-grow-1 mb-3">
+                                <li class="nav-item w-100">
+                                    <div class="d-flex rounded-3 bg-light border-0 overflow-hidden w-100">
+                                        <input class="form-control bg-light rounded-0 border-0 py-2" type="search"
+                                            placeholder="Search">
+                                        <button class="btn yellow_bg border-0 rounded-0" type="button">
+                                            <i class="fas fa-search text_blue"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column">
+                                <li class="nav-item my-1">
+                                    <a class="nav-link side_category_nav" href="single_category.html">Home</a>
+                                </li>
+                                <li class="nav-item my-1">
+                                    <a class="nav-link side_category_nav" href="single_category.html">Electronics</a>
+                                </li>
+                                <li class="nav-item my-1">
+                                    <a class="nav-link side_category_nav" href="single_category.html">Watches</a>
+                                </li>
+                                <li class="nav-item my-1">
+                                    <a class="nav-link side_category_nav" href="single_category.html">Jewellery</a>
+                                </li>
+                                <li class="nav-item my-1">
+                                    <a class="nav-link side_category_nav" href="single_category.html">Health & Beauty</a>
+                                </li>
+                                <li class="nav-item my-1">
+                                    <a class="nav-link side_category_nav" href="single_category.html">Fashion</a>
+                                </li>
+                                <li class="nav-item my-1">
+                                    <a class="nav-link side_category_nav" href="single_category.html">Perfumes</a>
+                                </li>
+                                <li class="nav-item my-1">
+                                    <a class="nav-link side_category_nav" href="single_category.html">Kitchen Items</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav d-flex flex-row justify-content-between">
+                                <li class="nav-item w-100">
+                                    <button class="btn btn-outline-dark border-0 rounded-3 ms-2" type="button">
+                                        <i class="fab fa-facebook icon_size text_yellow"></i>
+                                    </button>
+                                    <button class="btn btn-outline-dark border-0 rounded-3 me-1" type="button">
+                                        <i class="fab fa-whatsapp icon_size text_yellow"></i>
+                                    </button>
+                                    <button class="btn btn-outline-dark border-0 rounded-3 me-1" type="button">
+                                        <i class="fab fa-instagram icon_size text_yellow"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container-fluid px-0 no_dsp_mob">
+        <ul class="nav nav-fill category_navv">
+            <li class="nav-item">
+                <a class="nav-link top_category_nav active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link top_category_nav" href="single_category.html">Electronics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link top_category_nav" href="single_category.html">Watches</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link top_category_nav" href="single_category.html">Jewellery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link top_category_nav" href="single_category.html">Health & Beauty</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link top_category_nav" href="single_category.html">Fashion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link top_category_nav" href="single_category.html">Perfumes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link top_category_nav" href="single_category.html">Kitchen Items</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mt-5">
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none text_yellow">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <h1 class="fw-light text-capitalize mt-3 text-center">
+                Checkout
+            </h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 my-3">
+                <div class="card border-0 left_border rounded yellow_bg p-3">
+                    <div class="d-flex align-items-center">
+                        <p class="wishlist_text text_blue my-auto me-2">
+                            Returning customer?
+                        </p>
+                        <a href="#" class="text-decoration-none text_blue product_name fw-bold h-auto">
+                            Click here to login
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <div class="card border-0 left_border rounded yellow_bg p-3">
+                    <div class="d-flex align-items-center">
+                        <p class="wishlist_text text_blue my-auto me-2">
+                            Have a coupon?
+                        </p>
+                        <a href="#" class="text-decoration-none text_blue product_name fw-bold h-auto">
+                            Click here to enter your code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-7 col-md-12 mb-3">
+                <div class="border-bottom mb-5 mt-3 d-flex justify-content-between align-items-baseline">
+                    <h4 class="heading_border">Billing details</h4>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="wishlist_text justify-content-start text-dark fw-bold mb-2">
+                                First name *
+                            </label>
+                            <input type="text" class="form-control custom_input rounded-pill py-2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="wishlist_text justify-content-start text-dark fw-bold mb-2">
+                                Last name *
+                            </label>
+                            <input type="text" class="form-control custom_input rounded-pill py-2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="wishlist_text justify-content-start text-dark fw-bold mb-2">
+                                Country / Region *
+                            </label>
+                            <select class="form-select form-control custom_input rounded-pill py-2">
+                                <option value="1" selected>USA</option>
+                                <option value="2">UK</option>
+                                <option value="3">China</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="wishlist_text justify-content-start text-dark fw-bold mb-2">
+                                Town / City *
+                            </label>
+                            <input type="text" class="form-control custom_input rounded-pill py-2">
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label class="wishlist_text justify-content-start text-dark fw-bold mb-2">
+                                Street address *
+                            </label>
+                            <textarea rows="2" class="form-control custom_input py-2"
+                                placeholder="House number and street name"></textarea>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="wishlist_text justify-content-start text-dark fw-bold mb-2">
+                                Phone *
+                            </label>
+                            <input type="number" class="form-control custom_input rounded-pill py-2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="wishlist_text justify-content-start text-dark fw-bold mb-2">
+                                Email address *
+                            </label>
+                            <input type="email" class="form-control custom_input rounded-pill py-2">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="wishlist_text justify-content-start text-dark fw-bold mb-2">
+                                Order notes (optional)
+                            </label>
+                            <textarea rows="2" class="form-control custom_input py-2"
+                                placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-5 col-md-12 mb-3">
+                <div class="card rounded border-0 light_bg p-3 h-100">
+                    <div class="border-bottom mb-5 mt-3 d-flex justify-content-between align-items-baseline">
+                        <h4 class="heading_border">Your order</h4>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="product_name fw-bold text-dark h-auto my-auto">
+                            Product
+                        </p>
+                        <p class="product_name fw-bold text-dark h-auto my-auto">
+                            Subtotal
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="wishlist_text text-dark h-auto my-auto">
+                            Notebook Widescreen Z51-70 40K6013UPB
+                            <span class="fw-bold">&nbsp;x 1</span>
+                        </p>
+                        <p class="product_name text-dark h-auto my-auto">
+                            $1,100.00
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="product_name fw-bold text-dark h-auto my-auto">
+                            Subtotal
+                        </p>
+                        <p class="product_name text-dark h-auto my-auto">
+                            $1,100.00
+                        </p>
+                    </div>
+                    <hr>
+                    <p class="product_name fw-bold text-dark h-auto my-auto mb-3">
+                        Shipping
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="wishlist_text text-dark h-auto my-auto">
+                            Flat rate:
+                        </p>
+                        <p class="product_name text-dark h-auto my-auto">
+                            $50.00
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="product_name fw-bold text-dark h-auto my-auto">
+                            Total
+                        </p>
+                        <p class="product_name fw-bold text-dark h-auto my-auto">
+                            $1,150.00
+                        </p>
+                    </div>
+                    <hr>
+                    <a href="#" class="btn rounded-pill blue_bg text-white py-3">Place Order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid texture_bg py-5 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="border-bottom mb-5 mt-3 d-flex justify-content-between align-items-baseline">
+                        <h4 class="heading_border2">Featured Products</h4>
+                    </div>
+                    <div class="d-flex mb-3 product_card bg-white border-0 p-2">
+                        <div class="flex-shrink-0">
+                            <div class="hot_deals_img">
+                                <img src="assets/images/wirelessSound.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-1 my-auto">
+                            <p class="product_name fw-bold mb-2 h-auto">
+                                Wireless Audio System Multiroom 360
+                            </p>
+                            <div class="d-flex mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <h6 class="mb-0">$2,299.00</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3 product_card bg-white border-0 p-2">
+                        <div class="flex-shrink-0">
+                            <div class="hot_deals_img">
+                                <img src="assets/images/watch.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-1 my-auto">
+                            <p class="product_name fw-bold mb-2 h-auto">
+                                Smartwatch 2.0 LTE Wifi Waterproof
+                            </p>
+                            <div class="d-flex mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <h6 class="mb-0">$700.00</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex product_card bg-white border-0 p-2">
+                        <div class="flex-shrink-0">
+                            <div class="hot_deals_img">
+                                <img src="assets/images/goldphone.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-1 my-auto">
+                            <p class="product_name fw-bold mb-2 h-auto">
+                                Smart Phones & Tablets
+                            </p>
+                            <div class="d-flex mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <h6 class="mb-0">$1,399.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="border-bottom mb-5 mt-3 d-flex justify-content-between align-items-baseline">
+                        <h4 class="heading_border2">On-sale Products</h4>
+                    </div>
+                    <div class="d-flex mb-3 product_card bg-white border-0 p-2">
+                        <div class="flex-shrink-0">
+                            <div class="hot_deals_img">
+                                <img src="assets/images/consal.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-1 my-auto">
+                            <p class="product_name fw-bold mb-2 h-auto">
+                                Video Games & Consoles
+                            </p>
+                            <h6 class="mb-0">$99.00</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3 product_card bg-white border-0 p-2">
+                        <div class="flex-shrink-0">
+                            <div class="hot_deals_img">
+                                <img src="assets/images/heade1.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-1 my-auto">
+                            <p class="product_name fw-bold mb-2 h-auto">
+                                Accessories
+                            </p>
+                            <h6 class="mb-0">$248.00</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex product_card bg-white border-0 p-2">
+                        <div class="flex-shrink-0">
+                            <div class="hot_deals_img">
+                                <img src="assets/images/cat-7.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-1 my-auto">
+                            <p class="product_name fw-bold mb-2 h-auto">
+                                Cameras & Photography
+                            </p>
+                            <h6 class="mb-0">$129.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="border-bottom mb-5 mt-3 d-flex justify-content-between align-items-baseline">
+                        <h4 class="heading_border2">Top Selling Products</h4>
+                    </div>
+                    <div class="d-flex mb-3 product_card bg-white border-0 p-2">
+                        <div class="flex-shrink-0">
+                            <div class="hot_deals_img">
+                                <img src="assets/images/wirelessSound.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-1 my-auto">
+                            <p class="product_name fw-bold mb-2 h-auto">
+                                Wireless Audio System Multiroom 360
+                            </p>
+                            <div class="d-flex mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <h6 class="mb-0">$2,299.00</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3 product_card bg-white border-0 p-2">
+                        <div class="flex-shrink-0">
+                            <div class="hot_deals_img">
+                                <img src="assets/images/watch.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-1 my-auto">
+                            <p class="product_name fw-bold mb-2 h-auto">
+                                Smartwatch 2.0 LTE Wifi Waterproof
+                            </p>
+                            <div class="d-flex mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <h6 class="mb-0">$700.00</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex product_card bg-white border-0 p-2">
+                        <div class="flex-shrink-0">
+                            <div class="hot_deals_img">
+                                <img src="assets/images/goldphone.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-1 my-auto">
+                            <p class="product_name fw-bold mb-2 h-auto">
+                                Smart Phones & Tablets
+                            </p>
+                            <div class="d-flex mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <h6 class="mb-0">$1,399.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6 mb-3">
+                    <img src="assets/images/footer-widget-img.jpg" class="img-fluid img-thumbnail" alt="">
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="blue_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 my-5">
+                    <img src="assets/images/svg/easy_deal_logo2.svg" class="img-fluid" alt="">
+                    <p class="product_name fw-bold text_yellow h-auto mt-5">
+                        Contact Info
+                    </p>
+                    <p class="nav-link ps-0 wishlist_text justify-content-start text_yellow">
+                        Bahria Town, Rawalpindi Pakistan
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="text-decoration-none text_yellow">
+                            <i class="fab fa-facebook icon_size"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text_yellow ms-4">
+                            <i class="fab fa-whatsapp icon_size"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text_yellow ms-4">
+                            <i class="fab fa-pinterest icon_size"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text_yellow ms-4">
+                            <i class="fab fa-linkedin icon_size"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text_yellow ms-4">
+                            <i class="fab fa-instagram icon_size"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text_yellow ms-4">
+                            <i class="fab fa-youtube icon_size"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text_yellow ms-4">
+                            <i class="fas fa-wifi icon_size"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-5">
+                    <p class="product_name fw-bold text_yellow h-auto">
+                        Find It Fast
+                    </p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">Laptops &
+                                Computers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">Cameras &
+                                Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">Smart
+                                Phones & Tablets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">Video Games
+                                & Consoles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">TV &
+                                Audio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">Gadgets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">Waterproof
+                                Headphones</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 my-5">
+                    <p class="product_name fw-bold text-dark h-auto" style="visibility: hidden;">
+                        Find It Fast
+                    </p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white"
+                                href="#">Wishlist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">Compare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">Store
+                                Directory</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 my-5">
+                    <p class="product_name fw-bold text_yellow h-auto">
+                        Customer Care
+                    </p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">My
+                                Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">Track your
+                                Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">Customer
+                                Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white"
+                                href="#">Returns/Exchange</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 wishlist_text justify-content-start text-white" href="#">Product
+                                Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid yellow_bg py-2">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <p class="wishlist_text text-dark my-auto">&copy;&nbsp;
+                        <span><a href="#" class="text-decoration-none fw-bold text_blue">Easydeals</a></span>
+                        &nbsp;- All Rights Reserved
+                    </p>
+                    <img src="assets/images/payment-icon.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/icon_fa_5.js"></script>
+
+</body>
+
+</html>
